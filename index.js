@@ -53,7 +53,7 @@ function alternarConteudo() {
   // Após a animação de saída (500ms), trocar conteúdo e animar entrada
   setTimeout(() => {
     // Alternar imagem (corrigido: 'src', não 'scr')
-    img.src = alternado ? `/img/casa_tech_p2.png` : `/img/casa_eco_p2.png`;
+    img.src = alternado ? `img/casa_tech_p2.png` : `img/casa_eco_p2.png`;
 
     // Alternar categoria
     categoria.innerHTML = alternado
