@@ -93,11 +93,17 @@ eficiência e respeito ao meio ambiente desde a fundação do seu lar.`;
 
 function alternarConteudo2(){
   const texto = document.getElementById('sobre_js');
+  const img = document.getElementById('sobre_img_js');
 
-  texto.classList.remove("entrada")
-  texto.classList.remove("saida")
-  void texto.offsetWidth;
-  texto.classList.add("saida")
+  elementos = [img, texto]
+
+  elementos.forEach(elm =>{
+    elm.classList.remove("entrada2");
+  elm.classList.remove("saida2");
+  void elm.offsetWidth;
+  elm.classList.add("saida2");
+  })
+  
 
   setTimeout(() => {
     texto.innerHTML = alternado ? `A Cura Engenharia nasceu com o propósito de transformar a maneira como vivemos, construímos e cuidamos dos nossos lares. Atuando com excelência e inovação, oferecemos soluções integradas nas áreas de automação residencial,\
@@ -112,9 +118,14 @@ function alternarConteudo2(){
       Utilizamos materiais ecológicos, técnicas construtivas que reduzem\
       impactos ambientais e priorizamos o conforto térmico e a economia de recursos,\ como água e energia.`;
   
-    texto.classList.remove("saida")
-    void texto.offsetWidth;
-    texto.classList.add("entrada") 
+    img.src = alternado ? `img/sobre_tech.png`:`img/sobre_eco.png`;
+      
+    elementos.forEach( elm =>{
+     elm.classList.remove("saida2");
+     void elm.offsetWidth;
+     elm.classList.add("entrada2") ; 
+    })
+    
   
   alternado = !alternado;
   }, 500);
