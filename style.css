@@ -43,9 +43,25 @@ header nav{
     justify-content: space-around;
 }
 header nav a{
+    width: 80px;
+    text-align: center;
+    padding: 0 5 0 5;
     text-decoration: none;
     font-size: 20px;
     color: #001345;
+    overflow: hidden;
+}
+
+.barrinha{
+  background: linear-gradient(to right, #000921 10%, white 90%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: background-position 0.3s linear;
+}
+
+.barrinha:hover{
+    background-position: left;  color: white;
+    box-shadow: 0px 2px 4px #001345;
 }
 
 #promo{
@@ -57,7 +73,7 @@ header nav a{
     background-image: url("img/back01.png");
     background-size: 1350px 550px;
     /* background-color: #000921; */
-    margin: 100px 0 50px 0;
+    margin: 90px 0 0 0;
 }
 
 #txt_promocional{
@@ -171,6 +187,7 @@ header nav a{
 #parte1{
     width: 100%;
     height: 550px;
+    padding-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -191,7 +208,7 @@ header nav a{
     height: 400px;
     background-color: #001345;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 #caixa_1 figure{
@@ -210,6 +227,13 @@ header nav a{
    background: 0;
    border: 0;
    color: white;
+   transition: ease-in 0.2s;
+}
+#caixa_1 button:hover{
+    transition: ease-in 0.2s;
+    cursor: pointer;
+    filter: drop-shadow( 0px 0px 5px  rgb(255, 255, 255));
+    background:linear-gradient(to right, #0014451f,  rgba(255, 255, 255, 0.103), #0014451f);
 }
 #text_sobre{
     width: 60%;
@@ -285,12 +309,19 @@ header nav a{
     align-items: center;
 }
 #info1 button{
-    width: 60px;
+    width: 80px;
     height: 40px;
     background: 0;
     border: 0;
     color: white;
+    transition: ease-in 0.2s;
 }
+#info1 button:hover{
+    cursor: pointer;
+    transition: ease-in 0.2s;
+    background:linear-gradient(to right, #00092115,  rgba(255, 255, 255, 0.24), #00092115);
+}
+
 #saiba_mais{
     background-color: white;
     font-size: 20px;

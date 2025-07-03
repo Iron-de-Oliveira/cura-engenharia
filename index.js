@@ -90,3 +90,32 @@ eficiência e respeito ao meio ambiente desde a fundação do seu lar.`;
     alternado = !alternado;
   }, 500);
 }
+
+function alternarConteudo2(){
+  const texto = document.getElementById('sobre_js');
+
+  texto.classList.remove("entrada")
+  texto.classList.remove("saida")
+  void texto.offsetWidth;
+  texto.classList.add("saida")
+
+  setTimeout(() => {
+    texto.innerHTML = alternado ? `A Cura Engenharia nasceu com o propósito de transformar a maneira como vivemos, construímos e cuidamos dos nossos lares. Atuando com excelência e inovação, oferecemos soluções integradas nas áreas de automação residencial,\
+     engenharia diagnóstica e construção sustentável,\
+      sempre com foco em eficiência, economia e bem-estar.`:
+       ` Atuamos na implementação de casas inteligentes, unindo automação residencial,\
+        eficiência energética e conforto personalizado.\
+         Nossa tecnologia transforma o cotidiano dos nossos clientes,\
+          oferecendo mais segurança, praticidade e controle na palma da mão.\
+      Também somos especialistas na construção de casas ecológicas,\
+      que aliam design moderno a soluções sustentáveis.\
+      Utilizamos materiais ecológicos, técnicas construtivas que reduzem\
+      impactos ambientais e priorizamos o conforto térmico e a economia de recursos,\ como água e energia.`;
+  
+    texto.classList.remove("saida")
+    void texto.offsetWidth;
+    texto.classList.add("entrada") 
+  
+  alternado = !alternado;
+  }, 500);
+}
