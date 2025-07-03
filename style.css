@@ -26,6 +26,7 @@ header{
     padding: 15px 0 5px 10px;
     background-color: white;
     z-index: 2;
+    box-shadow: 0px 2px 10px #000921;
 }
 
 header figure{
@@ -50,6 +51,7 @@ header nav a{
     font-size: 20px;
     color: #001345;
     overflow: hidden;
+    border-radius: 4px;
 }
 
 .barrinha{
@@ -74,6 +76,7 @@ header nav a{
     background-size: 1350px 550px;
     /* background-color: #000921; */
     margin: 90px 0 0 0;
+    box-shadow: 0px 2px 10px #000921;
 }
 
 #txt_promocional{

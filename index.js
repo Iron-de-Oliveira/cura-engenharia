@@ -9,29 +9,6 @@ setInterval(() => {
 }, 7500); 
 }animação();
 
-function next1(){
-    const categoria = ["Categoria: Casas inteligentes", "Categoria: Casas ecológicas"];
-    const tipo = ["Tipo: Instalação", "Tipo: Reforma e Construção"]
-    const texto = [
-        "Imagine uma vida onde sua casa antecipa suas necessidades. \
-        Com uma casa inteligente, você tem o controle total na palma da sua mão.\
-         Apagar as luzes, ligar o ar-condicionado antes de chegar e até mesmo trancar a porta\
-         , tudo isso pode ser feito com um toque no celular ou um simples comando de voz.\
-          Troque o 'eu preciso' pelo 'já está pronto'. É a praticidade que você merece,\
-           transformando seu dia a dia em uma experiência muito mais fluida e confortável.",
-
-        "Construindo sua casa utilizando materiais ecológicos,\
-         como o tijolo solo-cimento, que proporcionam redução significativa nos custos da obra e conforto \
-         térmico natural, mantendo o ambiente mais fresco no verão e mais aquecido no inverno.\
-        Essa é uma solução inteligente, econômica e sustentável para quem busca qualidade,\
-         eficiência e respeito ao meio ambiente desde a fundação do seu lar."   
-    ]
-
-    let contador = 0;
-
-    
-}
-
 let alternado = false;
 
 function alternarConteudo() {
@@ -129,4 +106,9 @@ function alternarConteudo2(){
   
   alternado = !alternado;
   }, 500);
+}
+
+// link para segunda página
+function segunda_pag(){
+  window.location.href = "/src/index.html"
 }
