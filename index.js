@@ -16,8 +16,9 @@ function alternarConteudo() {
   const categoria = document.getElementById('categoria');
   const tipo = document.getElementById('tipo');
   const img = document.getElementById('img_js_p2');
+  const link  = document.getElementById('saiba_mais');
 
-  const elementos = [p, categoria, tipo, img];
+  const elementos = [p, categoria, tipo, img, link];
 
   // Remove "entrada" e aplica "saida" com reflow forçado
   elementos.forEach(el => {
@@ -56,6 +57,11 @@ térmico natural, mantendo o ambiente mais fresco no verão e mais aquecido no i
 Essa é uma solução inteligente, econômica e sustentável para quem busca qualidade, \
 eficiência e respeito ao meio ambiente desde a fundação do seu lar.`;
 
+
+    link.onclick = alternado
+    ? () => segunda_pag()
+    : () => segunda_pag_2();
+
     // Reaplica a animação de entrada com reflow
     elementos.forEach(el => {
       el.classList.remove("saida");
@@ -71,6 +77,7 @@ eficiência e respeito ao meio ambiente desde a fundação do seu lar.`;
 function alternarConteudo2(){
   const texto = document.getElementById('sobre_js');
   const img = document.getElementById('sobre_img_js');
+
 
   elementos = [img, texto]
 
@@ -110,5 +117,8 @@ function alternarConteudo2(){
 
 // link para segunda página
 function segunda_pag(){
-  window.location.href = "/src/index.html"
+  window.location.href = "/src/index.html#parte1"
+}
+function segunda_pag_2(){
+  window.location.href = "/src/index.html#parte2"
 }
