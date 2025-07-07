@@ -117,8 +117,8 @@ function alternarConteudo2(){
 
 // link para segunda página
 function segunda_pag(){
-  window.location.href = "/src/index.html#parte1"
+  window.location.href = "/segundaPag/index.html#parte1"
 }
 function segunda_pag_2(){
-  window.location.href = "/src/index.html#parte2"
+  window.location.href = "/segundaPag/index.html#parte2"
 }
