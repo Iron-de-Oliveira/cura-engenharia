@@ -35,11 +35,14 @@ body{
 }
 
 #parte1 #info{
-    width: 60%;
+    width: 70%;
     gap: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    color: white;
+    font-size: 24px;
+    text-shadow: 0px 0px 5px black;
 }
 #parte1 #info nav{
     width: 100%;
@@ -47,6 +50,7 @@ body{
     display: flex;
     justify-content: start;
     align-items: center;
+    
 }
 
 #parte1 #info nav button{
@@ -57,6 +61,12 @@ body{
     background-position: right;
     background-size: 200% 100%;
     overflow: hidden;
+    transition: ease-in 0.3s;
+}
+#parte1 #info nav button:hover{
+    transition: ease-in 0.3s;
+    background-position: left;
+    color: white;
 }
 
 #parte1 #info #textarea{
@@ -75,39 +85,86 @@ body{
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 5px;
+    text-align: center;
 }
-#parte1 #info #demo button{
-   width: 250px;
-    height: 70px;
-    background-color: black; 
+#parte1 #info #demo #whatsapp{
+    width: 250px;
+    height: 60px;
+    font-size: 24px;
+    background-color: rgb(0, 0, 0); 
+    color: rgb(0, 255, 4);
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-#parte1 #info #demo button img{
-    width: 50px;
-    height: 50px;
+    box-shadow: 0px 0px 10px rgb(0, 255, 4);
+    border-radius: 4px;
 }
 
 #parte1 #info #demo div{
     width: 250px;
     height: 100px;
+    overflow: hidden;
 }
 #parte1 #info #demo div figure{
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: black;
+    padding: 3px;
 }
 #parte1 #info #demo #demo5{
-    display: none;
+    display: none; 
+}
+.figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 50%;
+    height: 60px;
 }
 
-#parte1 #info #demo div img{
- width: 64px;
- height: 64px;
+.imgP{
+    width: 50px;
+    height: 50px;
 }
+.imgM{
+    width: 60px;
+    height: 60px;
+}
+.imgG{
+    width: 70px;
+    height: 70px;
+}
+.imgSetinha{
+    width: 70px;
+    height: 20px;
+}
+
+ANIMAÇÕES 
+
+
+.saida {
+  animation: slideOut 0.5s forwards;
+}
+
+.entrada {
+  animation: slideIn 0.5s forwards;
+}
+
+@keyframes saida {
+  from { transform: translateX(100%); opacity: 1; }
+  to { right: 100%; opacity: 0; }
+}
+
+@keyframes entrada {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+
+
 
 /*  *//*  *//*  */
 /*  *//*  *//*  */
