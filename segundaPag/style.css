@@ -25,13 +25,13 @@ body{
 }
 
 #parte1 #central{
-    background-color: aliceblue;
-    width: 300px;
+    width: 370px;
     height: 385px;
 }
-
-#parte1 figure img{
-    
+#parte1 #central img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 #parte1 #info{
@@ -99,30 +99,31 @@ body{
     align-items: center;
     box-shadow: 0px 0px 10px rgb(0, 255, 4);
     border-radius: 4px;
+    margin: 25px 25px 0 25px ;
 }
 
-#parte1 #info #demo div{
-    width: 250px;
+#parte1 #info #demo #demo1, #demo2, #demo3, #demo4, #demo5{
+    width: 300px;
     height: 100px;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 #parte1 #info #demo div figure{
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: black;
-    padding: 3px;
+    width: 80%;
+    height: 50px;
 }
 #parte1 #info #demo #demo5{
     display: none; 
 }
-.figure{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    width: 50%;
-    height: 60px;
+.p{
+    text-align: center;
 }
 
 .imgP{
@@ -144,7 +145,6 @@ body{
 
 ANIMAÇÕES 
 
-
 .saida {
   animation: slideOut 0.5s forwards;
 }
@@ -153,17 +153,15 @@ ANIMAÇÕES
   animation: slideIn 0.5s forwards;
 }
 
-@keyframes saida {
+@keyframes slideOut {
   from { transform: translateX(100%); opacity: 1; }
   to { right: 100%; opacity: 0; }
 }
 
-@keyframes entrada {
+@keyframes slideIn {
   from { transform: translateX(-100%); opacity: 0; }
   to { transform: translateX(0); opacity: 1; }
 }
-
-
 
 
 /*  *//*  *//*  */

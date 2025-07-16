@@ -17,7 +17,9 @@
     const pd4 = document.getElementById("pd4");
     const pd5 = document.getElementById("pd5");
 
-    const elementos = [text, img1, img2, img3, img3_2, img3_3, img4,img5_2, img5, demo5, pd1,pd2, pd3, pd4, pd5]
+    const foto = document.getElementById("foto");
+
+    const elementos = [text, img1, img2, img3, img3_2, img3_3, img4,img5_2, img5, demo5, pd1,pd2, pd3, pd4, pd5, foto]
 
     elementos.forEach(el => {
         el.classList.remove("entrada");
@@ -27,6 +29,8 @@
     });
 
     setTimeout(() => {
+        foto.src = "/segundaPag/img2/casa6.png";
+
         text.innerHTML = "Dê o primeiro passo rumo à casa do futuro com nosso plano Essencial Smart.\
          Ideal para quem busca praticidade e quer experimentar os benefícios da automação sem grandes\
           investimentos. Conecte o essencial e sinta a diferença no seu dia a dia."
@@ -51,7 +55,7 @@
             void el.offsetWidth;
             el.classList.add("entrada");
         });
-    }, 500);
+    }, 400);
     
    
 };
@@ -73,8 +77,10 @@ function nav2(){
     const pd3 = document.getElementById("pd3");
     const pd4 = document.getElementById("pd4");
     const pd5 = document.getElementById("pd5");
+
+    const foto = document.getElementById("foto");
   
-    const elementos = [text, img1, img2, img3, img3_2, img3_3, img4,img5_2, img5, demo5, pd1,pd2, pd3, pd4, pd5]
+    const elementos = [text, img1, img2, img3, img3_2, img3_3, img4,img5_2, img5, demo5, pd1,pd2, pd3, pd4, pd5, foto]
 
    elementos.forEach(el => {
         el.classList.remove("entrada");
@@ -84,6 +90,8 @@ function nav2(){
     });
 
    setTimeout(() => {
+       foto.src = "/segundaPag/img2/casa2.png";
+
         text.innerHTML = "Eleve o nível de conveniência e bem-estar em sua casa com o plano Conforto Smart.\
          Além das funcionalidades essenciais, adicionamos soluções que proporcionam mais comodidade \
          e otimização do seu dia a dia.";
@@ -97,18 +105,18 @@ function nav2(){
         img5_2.style.display = "none" 
         demo5.style.display = "flex";   
 
-        pd1.innerHTML = "Tudo dos planos anteriores ";
+        pd1.innerHTML = "Planos anteriores ";
         pd2.innerHTML = " Climatização Inteligente";
         pd3.innerHTML = "Controle de Áudio e Vídeo";
-        pd4.innerHTML = "Sensores de Presença e Abertura";
-        pd5.innerHTML = "Criação de Cenas Personalizadas";
+        pd4.innerHTML = "Sensores de Presença";
+        pd5.innerHTML = "Cenários Personalizadas";
         
         elementos.forEach(el => {
             el.classList.remove("saida");
             void el.offsetWidth;
             el.classList.add("entrada");
         });
-    }, 500);
+    }, 400);
 }
 function nav3(){
    const text = document.getElementById("textarea");
@@ -128,8 +136,10 @@ function nav3(){
     const pd3 = document.getElementById("pd3");
     const pd4 = document.getElementById("pd4");
     const pd5 = document.getElementById("pd5");
+
+    const foto = document.getElementById("foto");
   
-    const elementos = [text, img1, img2, img3, img3_2, img3_3, img4,img5_2, img5, demo5, pd1,pd2, pd3, pd4, pd5]
+    const elementos = [text, img1, img2, img3, img3_2, img3_3, img4,img5_2, img5, demo5, pd1,pd2, pd3, pd4, pd5, foto]
 
    elementos.forEach(el => {
         el.classList.remove("entrada");
@@ -139,6 +149,9 @@ function nav3(){
     });  
 
    setTimeout(() => {
+
+        foto.src = "/segundaPag/img2/casa4.png";
+
         text.innerHTML = "Para quem busca uma experiência completa e integrada, o Premium Smart oferece um nível superior\
          de automação, segurança e eficiência. Tenha controle total sobre sua casa com soluções avançadas e personalizadas.";
         img1.src = "/segundaPag/img/lampada.png"; 
@@ -151,17 +164,17 @@ function nav3(){
         demo5.style.display = "flex";  
         
         pd1.innerHTML = "Tudo dos planos anteriores ";
-        pd2.innerHTML = "Automação de Cortinas e Persianas";
+        pd2.innerHTML = "Automação de Cortinas";
         pd3.innerHTML = "Irrigação Automatizada";
-        pd4.innerHTML = "Sistema de Segurança Avançado";
-        pd5.innerHTML = "Criação de rotinas avançadas";
+        pd4.innerHTML = "Segurança Avançada";
+        pd5.innerHTML = "Sistema avançado de rotinas";
                 
         elementos.forEach(el => {
             el.classList.remove("saida");
             void el.offsetWidth;
             el.classList.add("entrada");
         });
-    }, 500);
+    }, 400);
 }
 function nav4(){
    const text = document.getElementById("textarea");
@@ -182,7 +195,9 @@ function nav4(){
     const pd4 = document.getElementById("pd4");
     const pd5 = document.getElementById("pd5");
 
-    const elementos = [text, img1, img2, img3, img3_2, img3_3, img4,img5_2, img5, demo5, pd1,pd2, pd3, pd4, pd5]
+    const foto = document.getElementById("foto");
+
+    const elementos = [text, img1, img2, img3, img3_2, img3_3, img4,img5_2, img5, demo5, pd1,pd2, pd3, pd4, pd5, foto]
 
     elementos.forEach(el => {
         el.classList.remove("entrada");
@@ -191,6 +206,8 @@ function nav4(){
         el.classList.add("saida");
     }); 
    setTimeout(() => {
+        foto.src = "/segundaPag/img2/casa5.png";
+        
         text.innerHTML = "O plano Ultra Smart é a solução definitiva para quem deseja uma casa totalmente conectada e automatizada.\
          Uma experiência de moradia sem precedentes, onde cada detalhe é pensado para seu máximo conforto, segurança e conveniência.";
         img1.src = "/segundaPag/img/lampada.png"; 
@@ -202,10 +219,10 @@ function nav4(){
         img5.src = "/segundaPag/img/chat.png"
         demo5.style.display = "flex";  
         
-        d1.innerHTML = "Tudo dos planos anteriores ";
-        pd2.innerHTML = "Automação de Cortinas e Persianas";
+        pd1.innerHTML = "Contem Tudo dos planos anteriores ";
+        pd2.innerHTML = "Automação Residencial Completa";
         pd3.innerHTML = "Otimização Máxima de Cenários";
-        pd4.innerHTML = "Integração com Dispositivos Avançadosc";
+        pd4.innerHTML = "Integração com Dispositivos Avançados";
         pd5.innerHTML = "Consultoria Exclusiva e Suporte VIP";
 
         elementos.forEach(el => {
@@ -213,5 +230,5 @@ function nav4(){
             void el.offsetWidth;
             el.classList.add("entrada");
         });
-    }, 500);
+    }, 400);
 }
