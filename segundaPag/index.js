@@ -100,7 +100,7 @@ function nav2(){
         img3.src = "/segundaPag/img/televisao.png";  
         img3_2.style.display = "none"
         img3_3.style.display = "none";  
-        img4.src = "/segundaPag/img/tablete.png"; 
+        img4.src = "/segundaPag/img/movimento.png"; 
         img5.src = "/segundaPag/img/desktop.png"
         img5_2.style.display = "none" 
         demo5.style.display = "flex";   
@@ -167,7 +167,7 @@ function nav3(){
         pd2.innerHTML = "Automação de Cortinas";
         pd3.innerHTML = "Irrigação Automatizada";
         pd4.innerHTML = "Segurança Avançada";
-        pd5.innerHTML = "Sistema avançado de rotinas";
+        pd5.innerHTML = "Rotinas Avançadas";
                 
         elementos.forEach(el => {
             el.classList.remove("saida");
@@ -219,7 +219,7 @@ function nav4(){
         img5.src = "/segundaPag/img/chat.png"
         demo5.style.display = "flex";  
         
-        pd1.innerHTML = "Contem Tudo dos planos anteriores ";
+        pd1.innerHTML = "Contem Tudo dos Planos Anteriores ";
         pd2.innerHTML = "Automação Residencial Completa";
         pd3.innerHTML = "Otimização Máxima de Cenários";
         pd4.innerHTML = "Integração com Dispositivos Avançados";
@@ -231,4 +231,8 @@ function nav4(){
             el.classList.add("entrada");
         });
     }, 400);
+}
+
+function voltar(){
+    window.location.href = "/index.html";
 }
