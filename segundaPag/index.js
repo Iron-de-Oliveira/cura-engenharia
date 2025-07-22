@@ -236,3 +236,55 @@ function nav4(){
 function voltar(){
     window.location.href = "/index.html";
 }
+
+
+function nav5(){
+    const text = document.getElementById("textarea");
+   const img1 = document.getElementById("img1");
+   const img2 = document.getElementById("img2");
+   const img3 =  document.getElementById("img3.0");
+   const img3_2 =  document.getElementById("img3.1");
+   const img3_3 =  document.getElementById("img3.2");
+   const img4 =  document.getElementById("img4");
+
+   const pd1 = document.getElementById("pd1");
+    const pd2 = document.getElementById("pd2");
+    const pd3 = document.getElementById("pd3");
+    const pd4 = document.getElementById("pd4");
+
+    const foto = document.getElementById("foto");
+
+    const elementos = [text, img1, img2, img3, img3_2, img3_3, img4, pd1,pd2, pd3, pd4, foto]
+
+    elementos.forEach(el => {
+        el.classList.remove("entrada");
+        el.classList.remove("saida");
+        void el.offsetWidth; // força reflow
+        el.classList.add("saida");
+    }); 
+   setTimeout(() => {
+        foto.src = "/segundaPag/img2/casa5.png";
+        
+        text.innerHTML = " Construir uma casa ecológica é pensar no futuro e no seu bolso.\
+                 Com soluções sustentáveis, você reduz o consumo de energia e água, diminui o impacto ambiental e ainda economiza.\
+                  É qualidade de vida com responsabilidade e inteligência.";
+        img1.src = "/segundaPag/img/lampada.png"; 
+        img2.src = "/segundaPag/img/casa_TECH.png";  
+        img3.src = "/segundaPag/img/sala.png";  
+        img3_2.style.display = "none"
+        img3_3.style.display = "none";
+        img4.src = "/segundaPag/img/dispositivos.png";  
+
+        
+        pd1.innerHTML = "Contem Tudo dos Planos Anteriores ";
+        pd2.innerHTML = "Automação Residencial Completa";
+        pd3.innerHTML = "Otimização Máxima de Cenários";
+        pd4.innerHTML = "Integração com Dispositivos Avançados";
+
+        elementos.forEach(el => {
+            el.classList.remove("saida");
+            void el.offsetWidth;
+            el.classList.add("entrada");
+        });
+    }, 400);
+}
