@@ -423,6 +423,11 @@ header nav a{
     width: 35px;
     height: 35px;
 }
+
+.whatsapp{
+    color: black;
+    font-size: 30px;
+}
 .alinhamento{
     display: flex;
     flex-direction: row;

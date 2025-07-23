@@ -13,10 +13,8 @@ body{
     background-color: #08002B
 }
 #voltarContainer{
-
     top: 20px;
     left: 20px;
-
     width: 100%;
     display: flex;
     justify-content: flex-start;    
@@ -82,6 +80,7 @@ body{
 }
 
 #parte1 #info nav button{
+    cursor: pointer;
     border: solid 0;
     font-size: 24px;
     padding: 5;
@@ -104,7 +103,7 @@ body{
     width: 100%;
     height: 130px;
     font-size: 24px; 
-    padding: 0 0 0 10px;
+    padding: 0 0 10px 10px;
 }
 
 #parte1 #info #demo{
@@ -160,6 +159,8 @@ body{
     background-color: black;
     width: 80%;
     height: 50px;
+    font-size: 30px;
+    gap: 10px;
 }
 #parte1 #info #demo #demo5{
     display: none; 
@@ -167,28 +168,7 @@ body{
 .p{
     text-align: center;
 }
-.imgWhats{
-    width: 30px;
-    height: 30px;
-    filter: opacity(50%);
-    transition: ease-in 0.2s ;
-}
-.imgP{
-    width: 50px;
-    height: 50px;
-}
-.imgM{
-    width: 60px;
-    height: 60px;
-}
-.imgG{
-    width: 70px;
-    height: 70px;
-}
-.imgSetinha{
-    width: 70px;
-    height: 20px;
-}
+
 
 ANIMAÇÕES 
 
