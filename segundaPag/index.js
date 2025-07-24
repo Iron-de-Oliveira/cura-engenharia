@@ -29,7 +29,7 @@
     });
 
     setTimeout(() => {
-        foto.src = "/segundaPag/img2/casa6.png";
+        foto.src = "/cura-engenharia/segundaPag/img2/casa6.png";
 
         text.innerHTML = "Dê o primeiro passo rumo à casa do futuro com nosso plano Essencial Smart.\
          Ideal para quem busca praticidade e quer experimentar os benefícios da automação sem grandes\
@@ -90,7 +90,7 @@ function nav2(){
     });
 
    setTimeout(() => {
-       foto.src = "/segundaPag/img2/casa2.png";
+       foto.src = "/cura-engenharia/segundaPag/img2/casa2.png";
 
         text.innerHTML = "Eleve o nível de conveniência e bem-estar em sua casa com o plano Conforto Smart.\
          Além das funcionalidades essenciais, adicionamos soluções que proporcionam mais comodidade \
@@ -150,7 +150,7 @@ function nav3(){
 
    setTimeout(() => {
 
-        foto.src = "/segundaPag/img2/casa4.png";
+        foto.src = "/cura-engenharia/segundaPag/img2/casa4.png";
 
         text.innerHTML = "Para quem busca uma experiência completa e integrada, o Premium Smart oferece um nível superior\
          de automação, segurança e eficiência. Tenha controle total sobre sua casa com soluções avançadas e personalizadas.";
@@ -205,7 +205,7 @@ function nav4(){
         el.classList.add("saida");
     }); 
    setTimeout(() => {
-        foto.src = "/segundaPag/img2/casa5.png";
+        foto.src = "/cura-engenharia/segundaPag/img2/casa5.png";
         
         text.innerHTML = "O plano Ultra Smart é a solução definitiva para quem deseja uma casa totalmente conectada e automatizada.\
          Uma experiência de moradia sem precedentes, onde cada detalhe é pensado para seu máximo conforto, segurança e conveniência.";
