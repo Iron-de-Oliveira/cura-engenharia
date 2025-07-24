@@ -234,7 +234,7 @@ function nav4(){
 }
 
 function voltar(){
-    window.location.href = "/index.html";
+    window.location.href = "/cura-engenharia/index.html";
 }
 
 function nav5(){
