@@ -261,7 +261,7 @@ function nav5(){
         el.classList.add("saida");
     }); 
    setTimeout(() => {
-        foto.src = "/segundaPag/img2/reforma.png";
+        foto.src = "/cura-engenharia/segundaPag/img2/reforma.png";
         
         text.innerHTML = "Com soluções sustentáveis, sua casa se torna mais confortável\
         , econômica e valorizada. Economize energia, água e viva em um ambiente mais saudável.\
@@ -311,7 +311,7 @@ function nav6(){
         el.classList.add("saida");
     }); 
    setTimeout(() => {
-        foto.src = "/segundaPag/img2/construcao_do_zero.png";
+        foto.src = "/cura-engenharia/segundaPag/img2/construcao_do_zero.png";
         
         text.innerHTML = "Construir uma casa ecológica é pensar no futuro e no seu bolso.\
                  Com soluções sustentáveis, você reduz o consumo de energia e água, diminui o impacto ambiental e ainda economiza.\
