@@ -256,7 +256,7 @@ ANIMAÇÕES
     color: white;
 }
 
-#parte2 #info #textarea{
+#parte2 #info #textarea2{
     background-color: #0A0A0A;
     color: white;
     border: solid 0;
@@ -318,4 +318,7 @@ ANIMAÇÕES
     overflow: hidden;
     justify-content: center;
     align-items: center;
+}
+#imgp1, #imgp2, #imgp3, #imgp4, #imgp3_2{
+    font-size: 24px;
 }
